@@ -7,15 +7,50 @@ body {
   background-size: cover;
 }
 
+.container {
+  max-width: 1025px;
+}
+
 img {
   width: 100%;
   max-height: 100%;
   height: 100%;
 }
 
+.social-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  height: 60px;
+}
+
+#icons > li {
+  width: 60px;
+}
+
+.fa-facebook {
+  background-color: #364F89;
+}
+
+nav {
+  width: 1025px;
+}
+
 ul {
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
   list-style: none;
   padding-left: unset;
+}
+
+ul > li {
+  background-color: #B6272A;
+  margin: auto;
+  text-align: center;
+  height: 40px;
+  width: 248px;
 }
 
 a {
@@ -33,6 +68,7 @@ section:not(:last-child) {
   border: solid 10px #fff;
   /* background-size: 127%; */
   position: relative;
+  width: 1025px;
 }
 
 #carousel > .grid {
@@ -47,17 +83,73 @@ section:not(:last-child) {
   min-width: 25rem;
 }
 
+#news {
+  width: 1025px;
+}
+
 #news article {
   background-color: #fff;
+  height: 350px;
   padding: 20px;
 }
 
+#news article > h2 {
+  font-size: 28px;
+  font-weight: normal;
+  line-height: 30px;
+}
+
+#news article > time {
+  color: #AAAAAA;
+}
+
+#news article > p {
+  font-size: 12px;
+}
+
 #news button {
+  color: #C9262B;
   padding: 0;
 }
 
+#skateboarders {
+  height: 475px;
+}
+
+.skateboarder:not(.skateboarder_tommy) {
+  border-color: #fff;
+  border-style: solid;
+  border-width: 5px;
+  height: 222px;
+}
+
+.skateboarder_tommy {
+  border-color: #red;
+  border-style: solid;
+  border-width: 5px;
+  height: 448px;
+}
+
+#skateboards {
+  background-color: #fff;
+  display: inline;
+}
+
 .w-100 {
-  height: 30px;
+  height: 5px;
+}
+
+#contact {
+  background-color: #fff;
+  display: flex;
+  position: absolute;
+  width: 1025px;
+}
+
+.skateboard-image {
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
 }
 
 @media (min-width: 768px) {
@@ -66,5 +158,7 @@ section:not(:last-child) {
     transform: translateY(-50%);
   }
 }
+/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=styles.scss.map */
 
 /*# sourceMappingURL=styles.css.map */
