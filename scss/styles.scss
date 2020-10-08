@@ -112,8 +112,19 @@ section:not(:last-child) {
   padding: 0;
 }
 
-#skateboarders {
-  height: 475px;
+.skateboarder-name {
+  color: #fff;
+  font-weight: bolder;
+  font-size: 35px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.skateboarder {
+  position: relative;
+  text-align: center;
 }
 
 .skateboarder:not(.skateboarder_tommy) {
@@ -124,7 +135,7 @@ section:not(:last-child) {
 }
 
 .skateboarder_tommy {
-  border-color: #red;
+  border-color: #fff;
   border-style: solid;
   border-width: 5px;
   height: 448px;
@@ -132,12 +143,29 @@ section:not(:last-child) {
 
 #skateboards {
   background-color: #fff;
-  display: inline;
-  // height: 295px;
+  height: 295px;
 }
 
 .w-100 {
   height: 5px;
+}
+
+.skateboard-image {
+  position: relative;
+  transform-origin: top left;
+  transform: rotate(90deg) translateY(-25%);
+  height: 260px;
+  width: 65px;
+}
+
+.skateboard-image img {
+  height: 65px;
+  width: 260px;
+  top: 0;
+}
+
+.form {
+  display: inline-block;
 }
 
 #contact {
@@ -147,13 +175,30 @@ section:not(:last-child) {
   width: 1025px;
 }
 
+input {
+  height: 44px;
+  width: 436px;
+}
+
+textarea {
+  height: 108px;
+  width: 436px;
+}
+
+#submit-btn {
+  color: #fff;
+  background-color: #A63634;
+  height: 40px;
+  width: 248px;
+}
+
 @mixin transform($property) {
   -webkit-transform: $property;
   -ms-transform: $property;
   transform: $property;
 }
 
-.skateboard-image { @include transform(rotate(90deg));}
+// .skateboard-image { @include transform(rotate(90deg));}
 
 @media (min-width: 768px) {
   #carousel > .logo {
