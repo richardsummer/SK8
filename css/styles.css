@@ -33,7 +33,7 @@ img {
 }
 
 nav {
-  width: 1025px;
+  /* width: 1025px; */
 }
 
 ul {
@@ -50,7 +50,12 @@ ul > li {
   margin: auto;
   text-align: center;
   height: 40px;
-  width: 248px;
+  width: 245px;
+  /* padding: 5px; */
+}
+
+li {
+  padding-top: 7px;
 }
 
 a {
@@ -68,7 +73,6 @@ section:not(:last-child) {
   border: solid 10px #fff;
   /* background-size: 127%; */
   position: relative;
-  width: 1025px;
 }
 
 #carousel > .grid {
@@ -144,6 +148,7 @@ section:not(:last-child) {
 #skateboards {
   background-color: #fff;
   height: 295px;
+  padding-top: 18px;
 }
 
 .w-100 {
@@ -166,6 +171,7 @@ section:not(:last-child) {
 
 .form {
   display: inline-block;
+  padding: 3px;
 }
 
 #contact {
@@ -178,11 +184,13 @@ section:not(:last-child) {
 input {
   height: 44px;
   width: 436px;
+  padding: 3px;
 }
 
 textarea {
   height: 108px;
   width: 436px;
+  padding: 3px;
 }
 
 #submit-btn {
